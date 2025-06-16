@@ -19,13 +19,22 @@
     <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+      <style>
+        .circular-img {
+        width: 200px;           /* Set width */
+        height: 200px;          /* Set height to match */
+        object-fit: cover;      /* Ensures image fills the circle */
+        border-radius: 50%;     /* Makes it circular */
+        border: 2px solid #333; /* Optional: border around the circle */
+        }
+  </style>
 </head>
 
 <body>
     <!-- ******HEADER****** -->
     <header class="header">
         <div class="container">
-            <img class="profile-image img-responsive pull-left" src="assets/images/avatar.png" alt="Avatar" />
+            <img class="profile-image img-responsive pull-left circular-img" src="assets/images/robertgrooms.png" alt="Profile Pic" />
             <div class="profile-content pull-left">
                 <!-- TODO --> <h1 class="name">Robert Grooms</h1>
                 <!-- TODO --> <h2 class="desc">Software Engineer</h2>
@@ -75,7 +84,7 @@
                         <div class="desc text-start">
                             <!-- TODO --> <p>A site to list properties for sale and for buyers to view properties and make offers.
                                 Technical: Java, spring-boot, html, css, spring security </p>
-                                
+
                         </div><!--//desc-->
                         <!-- TODO --> <a class="btn btn-cta-secondary" href="#LINK TO YOUR PROJECT" target="_blank"><i
                                 class="fa fa-thumbs-up"></i> Back my project</a>

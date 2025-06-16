@@ -19,13 +19,22 @@
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+     <style>
+        .circular-img {
+        width: 200px;           /* Set width */
+        height: 200px;          /* Set height to match */
+        object-fit: cover;      /* Ensures image fills the circle */
+        border-radius: 50%;     /* Makes it circular */
+        border: 2px solid #333; /* Optional: border around the circle */
+        }
+  </style>
 </head>
 
 <body>
     <!-- ******HEADER****** -->
     <header class="header">
         <div class="container">
-            <img class="profile-image img-responsive pull-left" src="assets/images/avatar.png" alt="Avatar" />
+            <img class="profile-image img-responsive pull-left circular-img" src="assets/images/robertgrooms.png" alt="Profile Pic" />
             <div class="profile-content pull-left">
                 <!-- TODO -->
                 <h1 class="name">Robert Grooms</h1>
